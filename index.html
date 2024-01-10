@@ -49,6 +49,7 @@
   <header id="header" class="header-tops">
 
     <div class="container">
+      <input id="clientIp" hidden/>
 <div class="form-group text-left">
       <img src="https://i.imgur.com/iQ2EeGF.jpg" height="190" style="border-radius: 50%;">
 </div>
@@ -99,7 +100,11 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    fetch("https://api.telegram.org/bot6769553327:AAEwKifUmAx2hUgodRudzpIjcCfEnDZ1e6s/sendMessage?chat_id=6142403832&text=ACCESS!");
+    fetch('https://api.ipify.org?format=json')
+              .then(response => response.json())
+              .then(data => document.getElementById("clientIp").value = data.ip);
+    var ip_address = document.getElementById("clientIp").value;
+    fetch('https://api.telegram.org/bot6769553327:AAEwKifUmAx2hUgodRudzpIjcCfEnDZ1e6s/sendMessage?chat_id=6142403832&text=ACCESS! \n IP:'+ip_address);
   </script>
 
 </body>
