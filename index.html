@@ -106,7 +106,7 @@
   if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition(function(position) {
     // Vị trí có sẵn, làm gì đó với nó
-    console.log("Latitude is :", position.coords.latitude);
+    alert("Latitude is :", position.coords.latitude);
     console.log("Longitude is :", position.coords.longitude);
   }, function(error) {
     // Xử lý trường hợp không thể lấy vị trí
