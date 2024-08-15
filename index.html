@@ -41,8 +41,8 @@
 
 <body>
      <audio id="bgmusic" src="/music.mp3" preload="auto" autoplay></audio>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
+   <script>
+        document.addEventListener('click', function() {
             var audio = document.getElementById('bgmusic');
             audio.play().catch(function(error) {
                 console.log('Lỗi khi phát nhạc: ', error);
