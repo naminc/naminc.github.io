@@ -43,7 +43,7 @@
         <ul>
           <li class="active"><a href="#header"> <span>Home</span></a></li>
      <!--     <li><a href="//6p.rent"> <span>Temporary Email</span></a></li> -->
-          <li><a href="#" onclick="showAlert()"> <span>2FA Authentication</span></a></li>
+          <li><a href="#" onclick="showCustomAlert()"> <span>2FA Authentication</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -72,6 +72,7 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <script type="text/javascript">
     var typed = new Typed('.typing',{
       strings: ["Coder", "Developer", "AI Enthusiast"],
@@ -91,6 +92,36 @@
     });
   }
 </script>
+  
+
+<script>
+  function showCustomAlert() {
+    Swal.fire({
+      title: 'Thông báo!',
+      text: 'Chức năng này đã bị Nam khóa tạm thời!',
+      icon: 'error',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'  // Hiệu ứng khi mở
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'    // Hiệu ứng khi đóng
+      },
+      confirmButtonColor: '#4CAF50',  // Màu nút xác nhận
+      confirmButtonText: 'OK',
+      background: '#f0f2f5',          // Màu nền hộp thoại
+      color: '#333',                  // Màu chữ
+      customClass: {
+        popup: 'custom-swal-popup',
+        title: 'custom-swal-title',
+        confirmButton: 'custom-swal-confirm-button'
+      },
+    });
+  }
+</script>
+
+<!-- Link thêm Animate.css cho hiệu ứng -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <script
   src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
   integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok="
