@@ -4,7 +4,7 @@
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ngo Dinh Nam's Profile</title>
+  <title>Ngo Dinh Nam Profile</title>
   <meta content="" name="descriptison">
   <meta content="naminc, naminc.dev, naminc.io, naminc.cc, naminc.com, naminc.net, ngodinhnam, Ngo Dinh Nam, nam1nc, nam1nc, xnaminc" name="keywords">
   <meta name="author" name="NAMINC">
@@ -20,16 +20,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script type='text/javascript'> ! function (e, t, a) { function n() { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXJQE0Z86C"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JXJQE0Z86C');
-  </script>
-
 
   <!-- =======================================================
   * Template Name: Personal - v2.1.0
@@ -40,24 +30,9 @@
 </head>
 
 <body>
-     <audio id="bgmusic" src="/music.mp3" preload="auto" autoplay></audio>
-   <script>
-        document.addEventListener('click', function() {
-            var audio = document.getElementById('bgmusic');
-            audio.play().catch(function(error) {
-                console.log('Lỗi khi phát nhạc: ', error);
-            });
-        });
-    </script>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
-
     <div class="container">
-      <input id="clientIp" hidden/>
 <div class="form-group text-left">
       <img src="https://i.imgur.com/iQ2EeGF.jpg" height="190" style="border-radius: 50%;">
 </div>
@@ -67,8 +42,8 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header"> <span>Home</span></a></li>
-<!--           <li><a href="//6p.rent"> <span>Temporary Email</span></a></li> -->
-          <li><a href="//naminc.io/2fa"> <span>2FA Authentication</span></a></li>
+          <li><a href="//6p.rent"> <span>Temporary Email</span></a></li> -->
+          <li><a href="//naminc.io/2fa" onclick="showAlert()"> <span>2FA Authentication</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -96,6 +71,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
       strings: ["Coder", "Developer", "AI Enthusiast"],
@@ -104,26 +80,24 @@
       backSpeed: 65
     });
   </script>
+
+<script>
+  function showAlert() {
+    Swal.fire({
+      title: 'Noti!',
+      text: 'Chức năng này đã bị Nam khóa tạm thời',
+      icon: 'info',
+      confirmButtonText: 'OK'
+    });
+  }
+</script>
 <script
   src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
   integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok="
   crossorigin="anonymous"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-  
-  fetch('https://jsonip.com')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data.ip); // Địa chỉ IP
-    
-  })
-  .catch(error => {
-    console.error('Đã có lỗi xảy ra:', error);
-  });
-  
 
-  </script>
 
 </body>
 
