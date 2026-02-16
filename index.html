@@ -6,23 +6,23 @@
   <title>Ngo Dinh Nam | NAMINC | NAMINC.DEV</title>
 
   <!-- Description & Keywords -->
-  <meta name="description" content="Trang cá nhân của Ngo Dinh Nam (Naminc) – Back-End Developer.">
+  <meta name="description" content="Ngo Dinh Nam Profile (Naminc) – Back-End Software Engineer.">
   <meta name="keywords" content="naminc, ngo dinh nam, nam1nc, naminc.dev, naminc.io, naminc.cc, naminc.com, naminc.net, xnaminc, backend developer, lập trình viên, developer Việt Nam, web developer, flutter dev, nodejs, php, reactjs, nam inc, ngo dinh nam developer">
   <meta name="author" content="Ngo Dinh Nam - naminc">
 
   <!-- Open Graph (Facebook, Zalo, LinkedIn) -->
-  <meta property="og:title" content="Ngo Dinh Nam | Naminc | Back-End Developer">
-  <meta property="og:description" content="Back-End Developer | PHP | Node.js | React | Flutter | Xây dựng hệ thống web & ứng dụng.">
-  <meta property="og:image" content="https://naminc.io/pro5.jpg">
-  <meta property="og:url" content="https://naminc.io">
+  <meta property="og:title" content="Ngo Dinh Nam | Naminc | Back-End Software Engineer">
+  <meta property="og:description" content="Back-End Software Engineer | PHP | Node.js | React | Flutter | Xây dựng hệ thống web & ứng dụng.">
+  <meta property="og:image" content="https://naminc.dev/pro5.jpg">
+  <meta property="og:url" content="https://naminc.dev">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Naminc.io">
+  <meta property="og:site_name" content="naminc.dev">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ngo Dinh Nam | Naminc">
-  <meta name="twitter:description" content="Back-End Developer | PHP | Node.js | React | Flutter">
-  <meta name="twitter:image" content="https://naminc.io/pro5.jpg">
+  <meta name="twitter:description" content="Back-End Software Engineer | PHP | Node.js | React | Flutter">
+  <meta name="twitter:image" content="https://naminc.dev/pro5.jpg">
   <meta name="twitter:creator" content="@naminc">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPY2H8CFKQ"></script>
@@ -33,7 +33,7 @@
     gtag('config', 'G-QPY2H8CFKQ');
   </script>
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://naminc.io">
+  <link rel="canonical" href="https://naminc.dev">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -42,9 +42,9 @@
     "@type": "Person",
     "name": "Ngo Dinh Nam",
     "alternateName": "naminc",
-    "url": "https://naminc.io",
-    "image": "https://naminc.io/pro5.jpg",
-    "jobTitle": "Back-End Developer",
+    "url": "https://naminc.dev",
+    "image": "https://naminc.dev/pro5.jpg",
+    "jobTitle": "Back-End Software Engineer",
     "worksFor": {
       "@type": "Organization",
       "name": "Naminc Development"
@@ -63,7 +63,7 @@
   <link rel="icon" type="image/png" href="/favicon.png"/>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:400,500,700|Poppins:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,33 +75,61 @@
 
   <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/enhancements.css" rel="stylesheet">
 
   <!-- Click Heart Effect -->
-  <script type='text/javascript'>
-    !function(e, t, a) {
-      function n() { c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);}.heart:after,.heart:before{content:'';width:inherit;height:inherit;background:inherit;border-radius:50%;position:fixed;}.heart:after{top:-5px;}.heart:before{left:-5px;}"), o(), r() }
-      function r() { for (var e=0; e<d.length; e++) d[e].alpha<=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999"); requestAnimationFrame(r) }
-      function o() { var t="function"==typeof e.onclick && e.onclick; e.onclick=function(e){t&&t(),i(e)} }
-      function i(e) { var a=t.createElement("div"); a.className="heart", d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}), t.body.appendChild(a) }
-      function c(e) { var a=t.createElement("style"); a.type="text/css"; try { a.appendChild(t.createTextNode(e)) } catch(t) { a.styleSheet.cssText=e } t.getElementsByTagName("head")[0].appendChild(a) }
-      function s() { return "rgb(" + ~~(255*Math.random()) + "," + ~~(255*Math.random()) + "," + ~~(255*Math.random()) + ")" }
-      var d=[]; e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || function(e){ setTimeout(e,1000/60) }; n();
-    }(window, document);
-  </script>
+  <script src="assets/js/custom/click_heart.js"></script>
 </head>
 
 <body>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
     <div class="container">
 
-      <div class="form-group">
-        <img src="./pro5.jpg" height="190" style="border-radius: 50%;">
+      <!-- Avatar with gradient border -->
+      <div class="avatar-wrapper">
+        <div class="avatar-container">
+          <img src="./pro5.jpg" alt="Ngo Dinh Nam" class="profile-avatar">
+          <div class="avatar-status"></div>
+        </div>
       </div>
 
       <h1><a href="#">NGO DINH NAM</a></h1>
       <h2><a href="#">@naminc</a></h2>
       <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+
+      <!-- Bio Description -->
+      <p class="bio-description">
+        Passionate about building scalable backend systems and creating elegant solutions to complex problems.
+      </p>
+
+      <!-- Tech Stack Badges -->
+      <div class="tech-stack">
+        <span class="tech-badge">PHP</span>
+        <span class="tech-badge">Laravel</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">MySQL</span>
+      </div>
+
+      <!-- Stats Counter -->
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="20">0</div>
+          <div class="stat-label">Projects Done</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -113,12 +141,21 @@
       </nav>
 
       <div class="social-links mt-3">
-        <a href="https://www.facebook.com/nam1nc" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://github.com/naminc" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:ngodinhnam.dev@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-        <a href="//t.me/naminc" target="_blank" class="telegram"><i class="bx bxl-telegram"></i></a>
-        <a href="//instagram.com/_dinnem" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="//www.linkedin.com/in/naminc" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/nam1nc" target="_blank" class="facebook" data-tooltip="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://github.com/naminc" target="_blank" class="github" data-tooltip="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="mailto:ngodinhnam.dev@gmail.com" target="_blank" class="google" data-tooltip="Email"><i class="bx bxl-google"></i></a>
+        <a href="//t.me/naminc" target="_blank" class="telegram" data-tooltip="Telegram"><i class="bx bxl-telegram"></i></a>
+        <a href="//instagram.com/_dinnem" target="_blank" class="instagram" data-tooltip="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="//www.linkedin.com/in/naminc" target="_blank" class="linkedin" data-tooltip="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+      <!-- Donate Section -->
+      <div class="donate-section mt-4">
+        <p class="donate-text">☕ Support my work</p>
+        <a href="https://www.paypal.me/naminc" target="_blank" class="donate-btn">
+          <i class="bx bxl-paypal"></i>
+          <span>Donate via PayPal</span>
+        </a>
       </div>
     </div>
   </header>
@@ -136,10 +173,13 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <script type="text/javascript">
     var typed = new Typed('.typing', {
-      strings: ["Back-End Developer"],
+      strings: ["Back-End Software Engineer"],
       loop: true,
       typeSpeed: 65,
       backSpeed: 65
@@ -147,12 +187,74 @@
 
     function showAlert() {
       Swal.fire({
-        title: 'Thông báo',
-        text: 'Chức năng này đã bị Nam khóa tạm thời!',
+        title: 'Notification',
+        text: 'Coming soon!',
         icon: 'error',
         confirmButtonText: 'OK'
       });
     }
+
+    // Initialize Particles.js
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#12d640' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: false },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#12d640',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: true, mode: 'repulse' },
+          onclick: { enable: true, mode: 'push' },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+
+    // Stats Counter Animation
+    function animateStats() {
+      const stats = document.querySelectorAll('.stat-number');
+      stats.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        const increment = target / 50;
+        let current = 0;
+        
+        const updateCounter = () => {
+          if (current < target) {
+            current += increment;
+            stat.textContent = Math.ceil(current) + '+';
+            setTimeout(updateCounter, 30);
+          } else {
+            stat.textContent = target + '+';
+          }
+        };
+        updateCounter();
+      });
+    }
+
+    // Run stats animation when page loads
+    window.addEventListener('load', () => {
+      setTimeout(animateStats, 500);
+    });
   </script>
 
   <!-- jQuery CDN  -->
